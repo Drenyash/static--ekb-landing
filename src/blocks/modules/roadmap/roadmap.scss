@@ -1,0 +1,144 @@
+.roadmap {
+  display: flex;
+  column-gap: rem(30);
+  width: 100%;
+
+  @include r(1200) {
+    flex-direction: column;
+    row-gap: rem(10);
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 110px;
+    row-gap: rem(5);
+    padding: rem(15);
+    border-top-right-radius: rem(10);
+    border-bottom-left-radius: rem(10);
+
+    @include r(1200) {
+      margin-left: 50px;
+      padding: rem(10);
+    }
+
+    &:last-child {
+      &:after {
+        width: calc(100% - 26px);
+        @include r(1200) {
+          width: 3px;
+          height: 84%;
+        }
+      }
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: -35px;
+      left: 0;
+      display: block;
+      width: 26px;
+      height: 26px;
+      background-color: inherit;
+      border: 5px solid #E9F1F7;
+      border-radius: 50%;
+
+      @include r(1200) {
+        top: -13px;
+        left: -50px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: -23px;
+      left: 26px;
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: inherit;
+
+      @include r(1200) {
+        top: 13px;
+        left: -39px;
+        width: 3px;
+        height: 83%;
+      }
+    }
+
+    &--orange {
+      background-color: $orange;
+    }
+
+    &--green {
+      background-color: $green;
+    }
+
+    &--purple {
+      background-color: $purple;
+    }
+
+    &--200 {
+      width: rem(200);
+      @include r(1200) {
+        width: auto;
+      }
+    }
+
+    &--203 {
+      width: rem(203);
+      @include r(1200) {
+        width: auto;
+      }
+    }
+
+    &--190 {
+      width: rem(190);
+      @include r(1200) {
+        width: auto;
+      }
+    }
+
+    &--114 {
+      width: rem(114);
+      @include r(1200) {
+        width: auto;
+      }
+    }
+
+    &--120 {
+      width: rem(120);
+      @include r(1200) {
+        width: auto;
+      }
+    }
+  }
+
+  &__date {
+    font-weight: 300;
+    font-size: rem(18);
+    line-height: rem(28);
+    color: $white;
+  }
+
+  &__text {
+    font-family: $font-title;
+    font-weight: 500;
+    font-size: rem(14);
+    line-height: rem(17);
+    color: $white;
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    position: absolute;
+    top: -61px;
+    left: 11px;
+    display: block;
+    width: 23px;
+    height: 27px;
+  }
+}

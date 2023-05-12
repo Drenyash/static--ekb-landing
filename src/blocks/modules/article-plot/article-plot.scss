@@ -1,0 +1,104 @@
+.article-plot {
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    .article-plot__picture {
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__picture {
+    @include r(1200) {
+      max-height: rem(153);
+    }
+  }
+
+  &__content {
+    padding: rem(20) 0 rem(25);
+    @include r(1200) {
+      padding: rem(10) 0 rem(15);
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(10);
+    font-weight: 500;
+    font-size: rem(24);
+    line-height: rem(32);
+    color: $dark;
+
+    @include r(1200) {
+      margin-bottom: rem(5);
+      font-size: rem(20);
+    }
+  }
+
+  &__text {
+    padding-right: rem(7);
+    font-family: $font-title;
+    line-height: rem(19);
+    font-weight: 300;
+    @include r(1200) {
+      font-size: rem(14);
+      line-height: rem(17);
+    }
+  }
+
+  &__picture {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 370px;
+      height: 235px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, rgba(103, 220, 227, 0.54) 21.7%, rgba(42, 167, 164, 0) 100%);
+      opacity: 0;
+      transition: opacity .2s ease-in-out;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: rem(5);
+    width: 100%;
+    cursor: pointer;
+    transition: .3s linear;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  &__link {
+    color: $orange;
+    font-family: $font-title;
+    font-size: rem(16);
+    line-height: rem(19);
+  }
+  &__icon {
+    width: rem(7);
+    display: block;
+    height: rem(12);
+    fill: $orange;
+  }
+}

@@ -1,0 +1,82 @@
+<section class="modal modal--490 fancybox__content" id="reg-landing" style="display: none;">
+    <h2 class="title title--small title--dark mb-15 center">
+        Регистрация <br> <span>на событие</span>
+    </h2>
+    <form class="form" data-form="/local/templates/diez-ekb/ajax/form.about.ajax.php">
+        <div class="form__wrapper" data-form-wrapper>
+            <div class="form__main form__main--slim" data-form-main>
+                <label class="input mb-15" data-input="">
+                    <input class="input__field" placeholder="ФИО" type="text" name="USER_NAME" required=""
+                           data-input-field="" tabindex="0">
+                </label>
+                <label class="input mb-15" data-input="">
+                    <input class="input__field" placeholder="Email" type="email" name="USER_EMAIL" required=""
+                           data-input-field="" tabindex="0">
+                </label>
+                <label class="input mb-15" data-input="">
+                    <select class="input__select" required data-input-field>
+                        <option value="" selected disabled>Выберите сюжет</option>
+                        <option value="1">Сюжет 1</option>
+                        <option value="2">Сюжет 2</option>
+                        <option value="3">Сюжет 3</option>
+                        <option value="4">Сюжет 4</option>
+                        <option value="5">Сюжет 5</option>
+                    </select>
+                </label>
+                <label class="input mb-15" data-input="">
+                    <select class="input__select" required data-input-field>
+                        <option value="" selected disabled>Выберите персонажа</option>
+                        <option value="1">Персонаж 1</option>
+                        <option value="2">Персонаж 2</option>
+                        <option value="3">Персонаж 3</option>
+                        <option value="4">Персонаж 4</option>
+                        <option value="5">Персонаж 5</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+        <div class="form__toolbar form__toolbar--slim form__toolbar--column" data-agreement>
+            <button type="submit" class="button full button--orange button--230 button--center" data-form-button
+                    data-agreement-button tabindex="0">
+                <span class="button__text" data-form-field="">
+                    Отправить
+                </span>
+            </button>
+            <label class="checkbox checkbox--left checkbox--green" data-checkbox="">
+                <input class="checkbox__input" type="checkbox" data-agreement-checkbox data-checkbox-field
+                       required="" tabindex="0">
+                <div class="checkbox__box">
+                    <svg class="checkbox__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-check"></use>
+                    </svg>
+                </div>
+                <p class="checkbox__caption">
+                    Я согласен на обработку персональных данных
+                </p>
+            </label>
+        </div>
+        <!-- После успешной отправки удаляем атрибут hidden -->
+        <div class="form__message" data-form-message="" hidden="">
+            <div class="editor mb-120">
+                <h3>
+                    Заявка отправлена!
+                </h3>
+                <p>
+                    Спасибо, что помогаете сделать праздник 300-летия Екатеринбурга еще лучше!
+                    Мы свяжемся с контактным лицом с ближайшее время
+                </p>
+            </div>
+            <a class="button button--orange button--230 button--center" href="/" data-orig-tabindex="null"
+               tabindex="-1">
+                <span class="button__text">
+                    На главную
+                </span>
+            </a>
+        </div>
+    </form>
+    <button class="carousel__button is-close" title="Close" tabindex="0">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" tabindex="-1">
+            <path d="M20 20L4 4m16 0L4 20"></path>
+        </svg>
+    </button>
+</section>

@@ -1,0 +1,24 @@
+.modal {
+    width: 100%;
+    cursor: auto !important;
+    border-radius: rem(20);
+    background-color: $light;
+    padding: rem(50) rem(75);
+    box-shadow: 0 rem(4) rem(100) rgba(0, 0, 0, 0.25);
+
+    @include r(1200) {
+        padding: rem(30) rem(30);
+    }
+
+    &--490 {
+        max-width: rem(490);
+    }
+
+    &--570 {
+        max-width: rem(570);
+    }
+
+    &--970 {
+        max-width: rem(970);
+    }
+}
