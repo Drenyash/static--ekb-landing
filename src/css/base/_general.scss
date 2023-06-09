@@ -219,7 +219,7 @@ button {
         width: 470px;
         height: 409px;
         object-fit: cover;
-        object-position: center;
+        object-position: top;
 
         @include r(1200) {
             width: auto;

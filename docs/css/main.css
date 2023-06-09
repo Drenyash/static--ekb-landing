@@ -1343,8 +1343,8 @@ button {
   height: 409px;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  -o-object-position: top;
+     object-position: top;
 }
 @media only screen and (max-width: 1200px) {
   .picture img {
@@ -2100,6 +2100,11 @@ button {
   font-family: "Roboto", sans-serif;
   line-height: 1.1875rem;
   font-weight: 300;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 @media only screen and (max-width: 1200px) {
   .article-plot__text {
@@ -4416,8 +4421,8 @@ a.logo:hover {
   height: 235px;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  -o-object-position: top;
+     object-position: top;
 }
 .character__title {
   font-weight: 500;

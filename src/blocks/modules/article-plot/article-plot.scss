@@ -41,6 +41,11 @@
     font-family: $font-title;
     line-height: rem(19);
     font-weight: 300;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
     @include r(1200) {
       font-size: rem(14);
       line-height: rem(17);
