@@ -214,10 +214,11 @@ button {
     display: inline-block;
     border-radius: 15px;
     overflow: hidden;
+    height: 100%;
     img {
         display: block;
         width: 470px;
-        height: 409px;
+        height: 100%;
         object-fit: cover;
         object-position: top;
 

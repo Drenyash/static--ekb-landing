@@ -1336,11 +1336,12 @@ button {
   display: inline-block;
   border-radius: 15px;
   overflow: hidden;
+  height: 100%;
 }
 .picture img {
   display: block;
   width: 470px;
-  height: 409px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
@@ -3949,6 +3950,11 @@ a.logo:hover {
 .slider {
   overflow: visible;
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
 }
 .slider__container {
   overflow: hidden;
