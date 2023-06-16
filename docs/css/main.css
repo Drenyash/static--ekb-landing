@@ -1337,6 +1337,7 @@ button {
   border-radius: 15px;
   overflow: hidden;
   height: 100%;
+  max-height: 700px;
 }
 .picture img {
   display: block;
@@ -1344,8 +1345,8 @@ button {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
+  -o-object-position: center;
+     object-position: center;
 }
 @media only screen and (max-width: 1200px) {
   .picture img {
