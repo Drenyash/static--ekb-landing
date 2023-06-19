@@ -4367,8 +4367,8 @@ a.logo:hover {
 
 .plot__wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 16.875rem);
-  gap: 3.125rem 1.875rem;
+  grid-template-columns: repeat(auto-fill, minmax(16.875rem, 1fr));
+  gap: 3.125rem 1.25rem;
 }
 @media only screen and (max-width: 1200px) {
   .plot__wrapper {
