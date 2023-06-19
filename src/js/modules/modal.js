@@ -6,8 +6,10 @@ class Modal {
     }
 
     init() {
-        Fancybox.bind('[data-fancybox="modal-form"]', {
-            type: "inline"
+        Fancybox.bind('[data-fancybox="#reg-landing"]', {
+            type: "inline",
+            groupAttr: false,
+            dragToClose: false,
         });
     }
 }

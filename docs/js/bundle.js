@@ -5187,8 +5187,10 @@ class Modal {
     }
 
     init() {
-        _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__.Fancybox.bind('[data-fancybox="modal-form"]', {
-            type: "inline"
+        _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__.Fancybox.bind('[data-fancybox="#reg-landing"]', {
+            type: "inline",
+            groupAttr: false,
+            dragToClose: false,
         });
     }
 }

@@ -2,6 +2,7 @@
     overflow: visible;
     position: relative;
     display: flex;
+    flex-direction: column;
     height: 100%;
 
     &__container {
@@ -117,5 +118,25 @@
         //gap: rem(8);
         //display: flex;
         //justify-content: center;
+    }
+}
+
+.swiper {
+    &-toolbar {
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        width: 100%;
+
+        .button-scroll--prev {
+            position: absolute;
+            left: 10px;
+            transform: translateY(-50%);
+        }
+        .button-scroll--next {
+            position: absolute;
+            right: 10px;
+            transform: translateY(-50%);
+        }
     }
 }

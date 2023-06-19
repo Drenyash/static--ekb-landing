@@ -13,6 +13,7 @@
     display: flex;
     flex-direction: column;
     min-width: 110px;
+    width: 100%;
     row-gap: rem(5);
     padding: rem(15);
     border-top-right-radius: rem(10);
@@ -79,41 +80,6 @@
 
     &--purple {
       background-color: $purple;
-    }
-
-    &--200 {
-      width: rem(200);
-      @include r(1200) {
-        width: auto;
-      }
-    }
-
-    &--203 {
-      width: rem(203);
-      @include r(1200) {
-        width: auto;
-      }
-    }
-
-    &--190 {
-      width: rem(190);
-      @include r(1200) {
-        width: auto;
-      }
-    }
-
-    &--114 {
-      width: rem(114);
-      @include r(1200) {
-        width: auto;
-      }
-    }
-
-    &--120 {
-      width: rem(120);
-      @include r(1200) {
-        width: auto;
-      }
     }
   }
 
